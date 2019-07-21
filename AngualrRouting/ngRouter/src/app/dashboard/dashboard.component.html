@@ -1,0 +1,19 @@
+<kendo-grid #grid
+[data]="gridView"
+[skip]="skip"
+[pageSize]="pageSize"
+scrollable="virtual"
+[rowHeight]="36"
+[height]="350"
+[sort]="sort"
+(sortChange)="sortChange($event)"
+[sortable] = true
+[kendoGridSelectBy]="'id'"
+[selectedKeys]="mySelection"
+>
+<kendo-grid-column field="id" [width]="80" title="ID"></kendo-grid-column>
+<kendo-grid-column field="firstName" title="First Name" [width]="130"></kendo-grid-column>
+<kendo-grid-column field="lastName" title="Last Name" [width]="130"></kendo-grid-column>
+<kendo-grid-column field="city" title="City" [width]="130"></kendo-grid-column>
+<kendo-grid-column field="title" title="Title" [width]="180"></kendo-grid-column>
+</kendo-grid>
