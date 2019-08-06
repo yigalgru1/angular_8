@@ -18,6 +18,8 @@ import 'hammerjs';
 import { LogService } from "../shared/log.service";
 import { LogPublishersService } from "../shared/log-publishers.service";
 import { HttpClientModule } from '@angular/common/http';
+import { DialogsModule, WindowModule } from '@progress/kendo-angular-dialog';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     MatIconModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    DialogsModule,
+    WindowModule
   ],
   exports: [MatIconModule, MatButtonModule], // and the exports
 
